@@ -41,12 +41,12 @@ router.post('/register', async (req, res, next) => {
     delete user.dataValues.verified
     delete user.dataValues.hashToken
 
-    // await sendMail({
-    //   to: email,
-    //   template: 'register',
-    //   url: `${process.env.DOMAIN}/register/verify/${hashToken}`,
-    //   name: username
-    // })
+    await sendMail({
+      to: email,
+      template: 'register',
+      url: `${process.env.DOMAIN}/register/verify/${hashToken}`,
+      name: username
+    })
 
     res.json(user.dataValues)
   } catch (err) {
