@@ -13,7 +13,7 @@
   const database = require('../db');
   // const Link = require('../models/link');
 
-  await database.sync({ force: false });
+  // await database.sync({ force: false });
 
   /**
    * Get port from environment and store in Express.
