@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body: {
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <div style="border: 1px solid black;  width: 100%">
+        <div style="padding:30px;">
+            {{>header}}
+            <br>
+            <p style="font-weight: 100; font-size: 16px ; line-height: 37px;  font-family: Verdana; color: #1C1E3A; font-family: Verdana; text-align: center;">Olá {{name}},</p>
+            {{!-- <br> --}}
+            <p style="font-weight: 100; font-size: 16px ; line-height: 37px;  font-family: Verdana; color: #1C1E3A; font-family: Verdana; text-align: center;">Clique no botão abaixo para verificar seu endereço de e-mail.</p>
+            <br>
+            <!-- <div style="background: transparent linear-gradient(90deg, #2BAD90 0%, #00489A 100%) 0% 0% no-repeat padding-box;
+                        background: transparent linear-gradient(90deg, #2BAD90 0%, #00489A 100%) 0% 0% no-repeat padding-box;
+                        width: 497px; height: 133px; color: white; padding: 1px 0 10px 0;">
+                    <p style="text-align: center; font-weight: 100; font-size: 20px ; line-height: 57px;  font-family: Verdana; margin: 0px;">Email Validation OTP:</p>
+                    <p style="text-align: center; font-weight: 100; font-size: 50px ; line-height: 57px;  font-family: Verdana;  margin: 0px;">4352</p>
+            </div> -->
+            <br>
+            <a href="{{url}}" style="display: block; text-align: center; padding: 10px; background: #2f2fc0; color: #fff; width: 200px; margin: 0 auto; text-decoration: none; border-radius: 3px;" target="_blank">Verificar endereço de e-mail</a>
+            <br>
+            
+            <p style="font-weight: 100; font-size: 16px ; line-height: 37px;  font-family: Verdana; color: #1C1E3A; font-family: Verdana; text-align: center;">Se você não criou uma conta, nenhuma ação adicional é necessária.</p>
+            {{!-- <br> --}}
+            <br>
+            <p style="font-weight: 100; font-size: 16px ; line-height: 37px;  font-family: Verdana; color: #1C1E3A; font-family: Verdana; padding: 0; margin: 0; text-align: center;">Obrigado,</p>
+            <p style="font-weight: 100; font-size: 16px ; line-height: 37px;  font-family: Verdana; color: #1C1E3A; font-family: Verdana; padding: 0; margin: 0; text-align: center;">Encurtaki</p>
+
+
+        </div>
+            {{>footer}}
+        
+        
+    </div>
+</body>
+</html>

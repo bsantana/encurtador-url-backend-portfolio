@@ -34,6 +34,19 @@ const User = database.define('user',
       type: Sequelize.BOOLEAN,
       allowNull: false,
       defaultValue: false
+    },
+    rememberToken: {
+      type: Sequelize.STRING,
+      allowNull: true
+    },
+    hashToken: {
+      type: Sequelize.STRING,
+      allowNull: true
+    },
+    verified: {
+      type: Sequelize.BOOLEAN,
+      allowNull: false,
+      defaultValue: false
     }
   },
   {

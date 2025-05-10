@@ -27,6 +27,8 @@ router.post('/login', async (req, res, next) => {
       return res.status(400).json({ message: 'E-mail e/ou senha incorreto(s)' })
     }
 
+    // TODO: Vefificar se usuário está verificado na tabela de usuários
+
     //auth ok
     const id = user.dataValues.id
     const token = jwt.sign({ id }, process.env.SECRET, {
